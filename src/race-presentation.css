@@ -1,0 +1,22 @@
+.race-table{width:100%;border-collapse:collapse;margin:18px 0 20px;font-size:12px;font-variant-numeric:tabular-nums}
+.race-table thead th{padding:0 5px 10px;font-size:9px;font-weight:500;letter-spacing:.7px;color:var(--muted);text-align:right;white-space:nowrap}
+.race-table thead th:nth-child(2){text-align:left}.race-table .result-row{display:table-row;border-bottom:1px solid #d5edbe22;font-size:12px}
+.race-table td,.race-table tbody th{padding:12px 5px;white-space:nowrap;text-align:right;font-weight:500}
+.race-table td:first-child{color:var(--lime);width:23px;text-align:left}.race-table tbody th{text-align:left;max-width:150px;overflow:hidden;text-overflow:ellipsis}
+.race-table .is-human{background:#d6ef7a0c}.race-table [data-best-lap]{color:var(--lime)}
+.circuit-record{padding:13px 15px;margin:16px 0;border:1px solid #d6ef7a33;border-radius:3px;background:#d6ef7a08}
+.circuit-record>label{display:block!important;margin:0 0 8px!important;font-size:9px!important;font-weight:600;letter-spacing:1px;color:var(--lime)}
+.circuit-record label span{color:var(--muted);font-weight:400}.circuit-record>div{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.circuit-record strong{font-size:22px;font-variant-numeric:tabular-nums;font-weight:500}.circuit-record b{font-size:13px;font-weight:500;overflow-wrap:anywhere}.circuit-record small{display:block;font-size:11px;margin-top:7px;color:#ffc3a8}
+.circuit-record ol{list-style:none;padding:0;margin:0}.circuit-record li{display:flex;align-items:center;gap:10px;padding:6px 0;font-variant-numeric:tabular-nums}.circuit-record li>span{width:14px;color:var(--muted);font-size:10px}.circuit-record li>b{flex:1;font-size:12px}.circuit-record li>strong{font-size:14px}.circuit-record li:first-child{color:var(--lime)}
+.dialog.solo-results{width:550px;max-width:calc(100vw - 32px)}.solo-setup input#race-name{width:165px;min-width:0;background:#28443b;color:#f0f5df;border:1px solid #f0f5df33;border-radius:3px;padding:8px;font-size:13px}
+.spectator-panel{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);width:365px;max-width:calc(100vw - 36px);padding:15px 18px;background:#18332eeb;border:1px solid #e9f4c630;border-radius:5px;pointer-events:auto;backdrop-filter:blur(8px)}
+.spectator-finish{font-size:10px;letter-spacing:1.1px;color:var(--lime);display:flex;justify-content:space-between}.spectator-finish span{font-variant-numeric:tabular-nums}
+.spectator-view{display:flex;align-items:center;gap:13px;margin:14px 0}.spectator-view>div{flex:1;min-width:0;text-align:center}.spectator-view label{display:block;color:var(--muted);font-size:8px;letter-spacing:2px}.spectator-view strong{display:block;font-size:20px;margin:5px 0;overflow:hidden;text-overflow:ellipsis}.spectator-view small{display:block;font-size:10px;color:var(--muted)}
+.spectator-view button{background:#f0f5df10;color:var(--lime);width:32px;height:38px;border:1px solid #f0f5df22;border-radius:3px;font-size:26px}.spectator-view button:disabled{opacity:.25}
+.spectator-bottom{border-top:1px solid #f0f5df20;padding-top:11px;display:flex;align-items:center;justify-content:space-between;gap:12px}.spectator-bottom>span{font-size:8px;color:var(--muted)}.spectator-bottom b{display:block;font-size:13px;color:#f0f5df;margin-top:5px;font-variant-numeric:tabular-nums;font-weight:500}.spectator-bottom button{font-size:10px;background:transparent;color:var(--lime);padding:8px 0}
+.is-spectating .ride-controls,.is-spectating .course-progress,.is-spectating #pause-button{display:none}
+@media(max-width:700px){.is-spectating .map-panel{bottom:230px}.is-spectating .speed-panel{bottom:220px}.spectator-panel{bottom:18px}}
+@media(max-width:450px){.race-table,.race-table .result-row{font-size:10px}.race-table thead th{font-size:8px;letter-spacing:0}.race-table td,.race-table tbody th{padding:10px 3px}}
+.solo-results .solo-result-stats{margin:12px 0 16px}.solo-results .race-table td,.solo-results .race-table tbody th{padding-top:8px;padding-bottom:8px}.solo-results .circuit-record{margin:12px 0}.solo-results .circuit-record li{padding:5px 0}
+.network-note a{color:var(--lime);overflow-wrap:anywhere}

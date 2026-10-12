@@ -1,0 +1,30 @@
+.net-dialog{width:570px;max-width:calc(100vw - 32px)}.net-dialog h2{font-size:34px}.net-dialog label{display:block;font-size:14px;margin:16px 0 9px}.net-dialog input{width:100%;border:1px solid #d5edbe33;border-radius:3px;background:#102a25;color:#f0f4df;padding:13px;font-size:16px}.net-dialog input::placeholder{color:#aec1b2}.net-dialog .network-note{font-size:12px;margin:17px 0 6px}.net-dialog .network-error{color:#ffc3a8;font-size:13px;margin:9px 0 0;min-height:0}.network-error:empty{display:none}.menu-button:disabled{opacity:.42;transform:none;cursor:not-allowed}.share-row{display:flex;gap:8px}.share-row input{font:12px monospace;min-width:0}.share-row button{background:#d6ef7a;color:#172e2c;font-size:11px;font-weight:bold;border-radius:3px;min-width:125px;padding:8px}.lobby-caption{display:flex;justify-content:space-between;margin:23px 0 9px;font-size:12px;letter-spacing:1px;color:#c7d8bf}.lobby-players{border-top:1px solid #d5edbe22}.lobby-player{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid #d5edbe22;font-size:14px}.lobby-player>i{width:8px;height:28px;border-radius:2px}.lobby-player>div{flex:1}.lobby-player strong{font-size:15px}.lobby-player small{color:#aebfaf;font-size:10px}.lobby-player>div>small{display:block;margin-top:5px;font-size:9px;letter-spacing:1px}.lobby-player .host-tag{margin-left:8px;font-size:8px;border:1px solid #d5edbe44;border-radius:2px;padding:3px;color:#e9efcc}.ready-state{font-size:10px;color:#aebfaf}.ready-state.ready{color:#d6ef7a}.lobby-player>small{width:41px;text-align:right}.net-dialog .setting-row label{margin:0}.net-dialog .setting-row{margin-bottom:10px}.net-dialog .menu-button{padding:14px 17px}.arrival-stats{display:flex;gap:30px;margin:25px 0;font-size:10px;letter-spacing:1px}.arrival-stats strong{display:block;font-size:27px;margin-top:10px;font-weight:500;letter-spacing:-.7px}.result-row{display:flex;align-items:center;gap:14px;padding:16px 0;border-bottom:1px solid #d5edbe22;font-size:14px}.result-row>b{color:#d6ef7a;min-width:15px}.result-row>strong{flex:1}.result-row>span{font:13px monospace}.network-standings{position:absolute;right:34px;top:111px;width:193px;background:#142f27d9;backdrop-filter:blur(8px);border:1px solid #d5edbe22;padding:13px;border-radius:4px}.network-hud-label{font-size:9px;letter-spacing:1.5px;color:#d0ddc4;margin-bottom:8px}.network-rank{display:flex;align-items:center;gap:8px;padding:6px 0;font-size:12px}.network-rank.is-me{background:#d6ef7a11}.network-rank>b{min-width:13px}.network-rank>span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1}.network-rank>small{font-size:8px;color:#bdcbb5}.remote-name{position:absolute;transform:translate(-50%,-100%);font-size:12px;font-weight:700;background:#102921bf;padding:4px 8px;border:1px solid #ffffff20;border-radius:3px;white-space:nowrap;text-shadow:0 1px 2px #001b15;pointer-events:none}.network-loading{height:4px;width:70px;background:#d6ef7a;margin:25px auto;animation:loading .8s infinite alternate}#ui.is-multiplayer #debug{top:355px}.net-dialog input#network-code{text-transform:uppercase;letter-spacing:3px}@media(max-width:650px){.net-dialog{padding:21px}.net-dialog h2{font-size:28px}.network-standings{right:18px;top:175px;width:157px;padding:9px}.network-rank{font-size:11px}.share-row{flex-wrap:wrap}.share-row button{padding:10px;width:100%}.lobby-player{gap:8px}.lobby-player strong{font-size:13px}}@media(max-height:800px){.net-dialog{padding:23px}.net-dialog h2{margin:12px 0;font-size:28px}.lobby-player{padding:8px 0}.lobby-caption{margin-top:16px}.net-dialog .menu-button{padding:12px 15px}.net-dialog .network-note{margin:10px 0}.net-dialog .setting-row{min-height:42px}}
+
+/* Keep the ready/start controls reachable with a full twelve-player lobby. */
+.net-dialog{max-height:calc(100dvh - 32px);overflow-y:auto}
+.lobby-players{max-height:36dvh;overflow-y:auto}
+
+/* Chat multijoueur (Lobby & Résultats) */
+.net-chat{margin:18px 0 14px;border-top:1px solid #d5edbe22;padding-top:14px}
+.net-chat-header{font-size:10px;letter-spacing:1.5px;font-weight:700;color:#d6ef7a;margin-bottom:8px}
+.net-chat-messages{height:125px;max-height:125px;overflow-y:auto;display:flex;flex-direction:column;gap:6px;padding:8px 10px;background:#10251f;border:1px solid #d5edbe22;border-radius:4px;font-size:13px;scroll-behavior:smooth}
+.net-chat-empty{color:#8c9e8f;font-size:12px;font-style:italic;margin:auto 0;text-align:center}
+.net-chat-msg{line-height:1.35;word-break:break-word}
+.net-chat-msg b{font-weight:700;margin-right:6px}
+.net-chat-msg span{color:#f0f4df}
+.net-chat-form{display:flex;gap:8px;margin-top:8px}
+.net-chat-form input{flex:1;min-width:0;background:#102a25;border:1px solid #d5edbe33;border-radius:3px;color:#f0f4df;padding:9px 12px;font-size:13px}
+.net-chat-form input:focus{outline:2px solid #d6ef7a;outline-offset:1px;border-color:#d6ef7a}
+.net-chat-form button{background:#d6ef7a;color:#172e2c;font-size:14px;font-weight:bold;border-radius:3px;padding:0 16px;cursor:pointer;border:none;transition:background .15s}
+.net-chat-form button:hover{background:#e4fa8e}
+
+/* Mode spectateur (net-arrived) : chat incrusté au-dessus de la minimap */
+.net-chat.is-spectating{position:absolute;left:24px;bottom:215px;width:330px;max-width:calc(100vw - 48px);margin:0;padding:10px 12px;border-top:none;background:#142f27e6;backdrop-filter:blur(8px);border:1px solid #d5edbe22;border-radius:6px;box-shadow:0 4px 18px rgba(0,0,0,.45);z-index:50;pointer-events:auto}
+.net-chat.is-spectating .net-chat-messages{height:105px;max-height:105px;background:#0d201acc;padding:6px 8px}
+.net-chat.is-spectating .net-chat-form{margin-top:6px}
+.net-chat.is-spectating .net-chat-form input{padding:7px 10px;font-size:12px}
+.net-chat.is-spectating .net-chat-form button{padding:0 12px}
+@media(max-height:750px){.net-chat.is-spectating{bottom:180px;width:280px}.net-chat.is-spectating .net-chat-messages{height:80px;max-height:80px}}
+@media(max-width:700px){.net-chat.is-spectating{left:12px;bottom:280px;width:calc(100vw - 24px)}}
+
+
